@@ -7,27 +7,29 @@ class Livro{
 
     public function emprestarLivro(){
         if($this->qtdeEx > 0){
-            return $this->qtdeEx = $this->qtdeEx - 1;
+             $this->qtdeEx = $this->qtdeEx - 1;
         } else {
-            return "Não existem mais livros no estoque";
+            echo "Os exemplares acabram <br>";
         }
     }
     public function devolverLivro(){
-        return $this->qtdeEx = $this->qtdeEx + 1; 
+         $this->qtdeEx = $this->qtdeEx + 1; 
     }
     public function verificarDisponibilidade(){
         if($this->qtdeEx > 0){
-            return "Existem ". $this->qtdeEx ." livros disponiveis";
+            echo "Existem ". $this->qtdeEx ." livros disponiveis <br>";
+        } else {
+            echo "não existem exemplares disponiveis <br>";
         }
     }
-    public function alterarQuantidadePaginas($novaQuantidade){
-        return $this->qtdePag = $novaQuantidade;
+    public function alterarQuantidadePaginas(int $novaQuantidade){
+         $this->qtdePag = $novaQuantidade;
     }
     public function exibirInformacoes(){
     echo $this->titulo . "<br>";
     echo $this->autor . "<br>";
-    echo $this->qtdeEx . "<br>";
     echo $this->qtdePag . "<br>";
+    echo $this->qtdeEx . "<br>";
     }
     public function compararPaginas(Livro $outroLivro){
         if($this->qtdePag == $outroLivro->qtdePag){

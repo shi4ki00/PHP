@@ -15,8 +15,19 @@ $l1->alterarQuantidadePaginas(320);
 $l1->emprestarLivro();
 $l1->emprestarLivro();
 $l1->devolverLivro();
-$l1->exibirInformacoes();
 
+$l1->emprestarLivro();
+$l1->emprestarLivro();$l1->emprestarLivro();
+$l1->emprestarLivro();$l1->emprestarLivro();
+$l1->emprestarLivro();$l1->emprestarLivro();
+$l1->emprestarLivro();$l1->emprestarLivro();
+$l1->emprestarLivro();$l1->emprestarLivro();
+$l1->emprestarLivro();$l1->emprestarLivro();
+$l1->emprestarLivro();$l1->emprestarLivro();
+$l1->emprestarLivro();$l1->emprestarLivro();
+$l1->emprestarLivro();$l1->emprestarLivro();
+$l1->emprestarLivro();
+$l1->exibirInformacoes();
 
 
 $l2 = new Livro();
