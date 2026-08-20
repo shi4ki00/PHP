@@ -1,8 +1,8 @@
 <?php
 
-require_once "Produto3.php";
+require_once "Produto.php";
 
-class ProdutoDigital extends Produto3{
+class ProdutoDigital extends Produto{
     
     private float $tamanhoArquivoMB;
     private string $formatoArquivo;
@@ -13,7 +13,7 @@ class ProdutoDigital extends Produto3{
     public function getTamanhoArquivosMB(){
         return $this->tamanhoArquivoMB;   
     }
-    public function setTamanhoArquivosMB(string $tamanhoArquivoMB){
+    public function setTamanhoArquivosMB(float $tamanhoArquivoMB){
         $this->tamanhoArquivoMB = $tamanhoArquivoMB;
     }    
 
@@ -29,7 +29,7 @@ class ProdutoDigital extends Produto3{
     public function getLimiteDownloads(){
         return $this->limiteDownloads;   
     }
-    public function setLimiteDownloads(string $limiteDownloads){
+    public function setLimiteDownloads(int $limiteDownloads){
         $this->limiteDownloads = $limiteDownloads;
     }
 

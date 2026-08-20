@@ -1,8 +1,8 @@
 <?php
 
-require_once "Produto3.php";
+require_once "Produto.php";
 
-class ProdutoFisico extends Produto3{
+class ProdutoFisico extends Produto{
 
     private float $peso;
     private float $custoFreteFixo;
@@ -12,7 +12,7 @@ class ProdutoFisico extends Produto3{
     public function getPeso(){
         return $this->peso;   
     }
-    public function setPeso(string $peso){
+    public function setPeso(float $peso){
         $this->peso = $peso;
     }
 
@@ -20,8 +20,8 @@ class ProdutoFisico extends Produto3{
     public function getCustoFreteFixo(){
         return $this->custoFreteFixo;   
     }
-    public function setCustoFreteFixo(string $custoFreteFixo){
-        $this->$custoFreteFixo = $custoFreteFixo;
+    public function setCustoFreteFixo(float $custoFreteFixo){
+        $this->custoFreteFixo = $custoFreteFixo;
     }
 
     
